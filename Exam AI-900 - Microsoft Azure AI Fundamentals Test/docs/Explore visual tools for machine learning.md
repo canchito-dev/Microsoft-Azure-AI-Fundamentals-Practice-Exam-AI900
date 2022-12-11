@@ -176,3 +176,70 @@
 </details>
 
 ## Create a clustering model with Azure Machine Learning designer
+
+14. You are using an Azure Machine Learning designer pipeline to train and test a K-Means clustering model. You want your model to assign items to one of three clusters. Which configuration property of the K-Means Clustering module should you set to accomplish this?
+- [ ] Set Number of Centroids to 3
+- [ ] Set Random number seed to 3
+- [ ] Set Iterations to 3
+
+<details>
+  <summary>Check your answer</summary>
+
+- [x] Set Number of Centroids to 3: That is correct. To create K clusters, you must set the number of centroids to K
+- [ ] Set Random number seed to 3
+- [ ] Set Iterations to 3
+</details>
+
+15. You use Azure Machine Learning designer to create a training pipeline for a clustering model. Now you want to use the model in an inference pipeline. Which module should you use to infer cluster predictions from the model?
+- [ ] Score Model
+- [ ] Assign Data to Clusters
+- [ ] Train Clustering Model
+
+<details>
+  <summary>Check your answer</summary>
+
+- [ ] Score Model
+- [x] Assign Data to Clusters: That is correct. use the Assign Data to Clusters module to generate cluster predictions from a trained clustering model
+- [ ] Train Clustering Model
+</details>
+
+## Create a classification model with Azure Machine Learning designer
+
+16. You're using Azure Machine Learning designer to create a training pipeline for a binary classification model. You've added a dataset containing features and labels, a Two-Class Decision Forest module, and a Train Model module. You plan to use Score Model and Evaluate Model modules to test the trained model with a subset of the dataset that wasn't used for training. What's another module should you add?
+- [ ] Join Data
+- [ ] Split Data
+- [ ] Select Columns in Dataset
+
+<details>
+  <summary>Check your answer</summary>
+
+- [ ] Join Data
+- [x] Split Data: Correct. Use a Split Data module to randomly split a dataset into training and validation subsets.
+- [ ] Select Columns in Dataset
+</details>
+
+17. You use an Azure Machine Learning designer pipeline to train and test a binary classification model. You review the model's performance metrics in an Evaluate Model module, and note that it has an AUC score of 0.3. What can you conclude about the model?
+- [ ] The model can explain 30% of the variance between true and predicted labels.
+- [ ] The model predicts accurately for 70% of test cases.
+- [ ] The model performs worse than random guessing.
+
+<details>
+  <summary>Check your answer</summary>
+
+- [ ] The model can explain 30% of the variance between true and predicted labels.
+- [ ] The model predicts accurately for 70% of test cases.
+- [x] The model performs worse than random guessing. - Correct. An AUC of 0.5 is what you'd expect with random prediction of a binary model.
+</details>
+
+18. You use Azure Machine Learning designer to create a training pipeline for a classification model. What must you do before deploying the model as a service?
+- [ ] Create an inference pipeline from the training pipeline
+- [ ] Add an Evaluate Model module to the training pipeline
+- [ ] Clone the training pipeline with a different name
+
+<details>
+  <summary>Check your answer</summary>
+
+- [x] Create an inference pipeline from the training pipeline - Correct. You must create an inference pipeline to deploy as a service.
+- [ ] Add an Evaluate Model module to the training pipeline
+- [ ] Clone the training pipeline with a different name
+</details>
